@@ -9,6 +9,18 @@
             color: #ee6;
             font-family: sans-serif;
             text-transform: uppercase;
+            animation: zoomIn 1s ease;
+        }
+        
+        @keyframes zoomIn{
+            from{
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to{
+                transform: scale(1);
+                opacity: 1;
+            }
         }
         h1{
             text-align: center;
