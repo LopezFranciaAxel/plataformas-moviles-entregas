@@ -29,12 +29,12 @@
     }
 }
 
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     body, h1 {
         color: #111;
         background-color: #DDD;
     }
-} */
+} 
 
 @media not all and (hover: hover) {
     a {
