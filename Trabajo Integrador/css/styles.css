@@ -1,0 +1,104 @@
+/* Estilo general para todo el sitio */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Asegurar que no haya subrayado en el enlace */
+.navbar .nav-link:hover {
+    text-decoration: none;
+}
+
+
+/* Estilo para el contenido principal */
+.container {
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1E3A82;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para tarjetas de contenido */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card .card-body {
+    padding: 1rem;
+    background: #fff;
+}
+
+.card .card-title {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card .card-text {
+    color: #666;
+}
+
+/* Estilo para el footer */
+.footer {
+    background-color: #1E3A82;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer span {
+    color: #ffffff;
+}
+
+/* Estilos adicionales para mejor visualización */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar .navbar-collapse {
+        background-color: #1E3A82;
+    }
+    .navbar .nav-link {
+        padding: 0.5rem;
+        margin: 0.2rem 0;
+    }
+    .container {
+        padding: 0.5rem;
+    }
+    .card {
+        margin-bottom: 1rem;
+    }
+}

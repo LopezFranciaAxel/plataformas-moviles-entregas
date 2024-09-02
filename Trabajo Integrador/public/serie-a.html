@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia de la Serie A</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+<style>
+      /* Estilo para la barra de navegación superior */
+      .navbar {
+        background-color: #1d125d; 
+    }
+    
+    /* Estilo para el texto dentro de la barra de navegación */
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+    
+    .navbar .nav-link {
+        color: #ffffff;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border-radius: 5px; /* Bordes redondeados */
+    }
+    
+      /* Bundesliga */
+    .navbar .nav-link.bundesliga-link:hover {
+        background-color: rgba(255, 0, 0, 0.571);
+        color: #ffffff; /* Asegura que el texto siga siendo visible */
+    }
+    
+      /* Inicio */
+    .navbar .nav-link.index-link:hover {
+        background-color: rgba(255, 255, 255, 0.571);
+        color: #ffffff;
+    }
+    
+     /* Premier League */
+     .navbar .nav-link.premier-link:hover {
+        background-color: #37003c;
+        color: #ffffff;
+    }
+    
+      /* Seria A */
+      .navbar .nav-link.serie-a-link {
+        background-color: #1d125d;
+        color: #ffffff;
+    }
+    
+      /* La Liga */
+      .navbar .nav-link.la-liga-link:hover {
+        background-color: rgb(255, 75, 68);
+        color: #ffffff;
+    }
+    
+      /* UEFA */
+      .navbar .nav-link.uefa-link:hover {
+        background-color: #00d9f7;
+        color: #ffffff;
+    }
+    
+      /* CONMEBOL */
+      .navbar .nav-link.conmebol-link:hover {
+        background-color: #004D9E;
+        color: #ffffff;
+    }
+    
+    .historia-contenido {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; /* Espacio entre la imagen y el texto */
+        }
+    
+        .historia-contenido img {
+            max-width: 150px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Estilo para el carrusel */
+        .carousel-inner img {
+            height: 400px; /* Ajusta esta altura según tus necesidades */
+            object-fit: cover;
+            background-color: #ffffff;
+        }
+    
+        .carousel-inner h3{
+            color: #ffffff;
+        }
+    
+        .campeon-inter {
+     height:300px;
+     width: 400px;
+    }
+    
+    .copa-serie-a{
+      height:300px;
+      width: 400px;
+    }
+    
+    .mayor-goleador{
+      height:300px;
+      width: 400px;
+    }
+    
+    .maximo-campeon{
+      height:300px;
+      width: 400px;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-#212529">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Historia del Fútbol</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link index-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link premier-link" href="premier-league.html">Premier League</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link serie-a-link" href="serie-a.html">Serie A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active bundesliga-link" aria-current="page" href="bundesliga.html">Bundesliga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link la-liga-link" href="la-liga.html">La Liga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link uefa-link" href="uefa.html">UEFA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link conmebol-link" href="conmebol.html">CONMEBOL</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <!-- Inicio del carrusel -->
+  <div id="serieACarousel" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#serieACarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#serieACarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#serieACarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#serieACarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#serieACarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#serieACarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://imgs.search.brave.com/lAGNa7yZkwC7k7rLuCD3uR_U_ygZ8JEBWNaumY_lm2k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLmV1/cm9zcG9ydC5jb20v/X2lzc18vc3BvcnQv/Zm9vdGJhbGwvY2x1/Yi9sb2dvL2xhcmdl/LzQwNjcucG5n" class="d-block w-100 img-thumbnail" alt="Juventus">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Juventus</h3>
+          <p>El equipo más exitoso de la Serie A con múltiples títulos de liga.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://imgs.search.brave.com/13kqyoQKsjldsN0a2uNj3NndGNy35YH_Su9IAYsq3H8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L21p/bGFuL2ltYWdlcy83/LzdhL1N0ZW1tYV9N/aWxhbi5wbmcvcmV2/aXNpb24vbGF0ZXN0/L3NjYWxlLXRvLXdp/ZHRoLWRvd24vMjUw/P2NiPTIwMTMwNTE4/MTUzNzQ5JnBhdGgt/cHJlZml4PWl0" class="d-block w-100 img-thumbnail" alt="AC Milan">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>AC Milan</h3>
+          <p>Conocido por su rica historia y múltiples títulos europeos.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://imgs.search.brave.com/kbR_QnyuTPoaMxW88QxYMjZ1eKP_gsfOxtmNdyBFKaE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hczAx/LmVwaW1nLm5ldC9p/bWcvY29tdW5lcy9m/b3Rvcy9maWNoYXMv/ZXF1aXBvcy9sYXJn/ZS8zNS5wbmc" class="d-block w-100 img-thumbnail" alt="Inter de Milán">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Inter de Milán</h3>
+          <p>Otro gigante de la Serie A con una rica historia de éxitos.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://imgs.search.brave.com/UdRYlEHJrAEois27vDi-BOWcMqzZi04x7zxH4kruqd0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hczAx/LmVwaW1nLm5ldC9p/bWcvY29tdW5lcy9m/b3Rvcy9maWNoYXMv/ZXF1aXBvcy9sYXJn/ZS8yMy5wbmc" class="d-block w-100 img-thumbnail" alt="Lazio">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Lazio</h3>
+          <p>Un equipo con una fuerte presencia en la Serie A y múltiples títulos.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/1200px-AS_Roma_logo_%282017%29.svg.png" class="d-block w-100" alt="Roma">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>AS Roma</h3>
+          <p>Conocido por su pasión y éxito en competiciones nacionales e internacionales.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://imgs.search.brave.com/kts9cW55Td9eaWR8uOGmP5LhDnKiwGbq4Da-xhkur2A/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8yLzJkL1NT/Q19OZWFwZWwuc3Zn/LzIyMHB4LVNTQ19O/ZWFwZWwuc3ZnLnBu/Zw" class="d-block w-100 img-thumbnail" alt="Napoli">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Napoli</h3>
+          <p>Uno de los equipos más emocionantes de la Serie A.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#serieACarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#serieACarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Fin del carrusel -->
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Historia de la Serie A</h1>
+      <p>Esta famosa liga europea se disputa desde el año 1929. En ese entonces, el primero en coronarse como campeón de Italia fue el Ambrosiana Inter, el actual conocido como Inter de Milán. En la siguiente temporada, Juventus empezó una racha de 5 títulos consecutivos..</p>
+      <p>A lo largo de los años, la Serie A ha sido conocida por su táctica defensiva y su capacidad para desarrollar y atraer a jugadores de clase mundial. Equipos como la Juventus, el AC Milan y el Inter de Milán han dominado la liga, ganando múltiples títulos nacionales e internacionales.</p>
+      <p>La Serie A también es famosa por su pasión y su rivalidad entre equipos, ofreciendo partidos emocionantes y un alto nivel de competitividad.</p>
+    </div>
+    <div class="col-md-4">
+      <a href="https://www.legaseriea.it" target="_blank">
+      <img src="https://imgs.search.brave.com/xLOcEwDDOKoVMNUCjx3iw2L8UbEEO2FVn9T4HsU5Ib4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3Nlcmll/LWEtZm9vdGJhbGwz/NDkwLmpwZw" class="card-img-top" class="img-fluid" alt="Serie A">
+    </a>
+    </div>
+
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">Logros y Curiosidades</h5>
+        </div>
+        <div class="card-body">
+          <div class="accordion" id="accordionBundesliga">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Equipos más exitosos
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionBundesliga">
+                <div class="accordion-body">
+                  <p>El Bayern Múnich es el equipo más exitoso en la historia de la Bundesliga, con más de 30 títulos de liga. Otros equipos destacados incluyen al Borussia Dortmund y al Borussia Mönchengladbach, que han tenido periodos de gran éxito tanto en Alemania como en Europa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Máximos goleadores
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionBundesliga">
+                <div class="accordion-body">
+                  <p>Gerd Müller, conocido como "Der Bomber", es el máximo goleador en la historia de la Bundesliga con 365 goles en 427 partidos. Otros goleadores destacados incluyen a Robert Lewandowski y Klaus Fischer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Formato
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionBundesliga">
+                <div class="accordion-body">
+                  <p>La Bundesliga es una de las ligas con mayor asistencia en el mundo. Equipos como el Borussia Dortmund y el Bayern Múnich regularmente llenan sus estadios, con un promedio de asistencia que supera los 40,000 espectadores por partido.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container mt-4">
+    <h2>Mas Informacion</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Foot-Ball_Club_Juventus_1906.jpg" class="card-img-top maximo-campeon img-thumbnail" alt="Maximo Campeon">
+              <div class="card-body">
+                <h5 class="card-title">Maximo Campeon</h5>
+                <p class="card-text"> La Juventus es el único equipo de Italia que ha levantado más de 30 campeonatos de Liga (en total 36 ligas). Y, por lo tanto, puede llevar tres estrellas sobre su escudo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://imgs.search.brave.com/4dNAJU7Ps3XwmGt0ZRip2HNHmraWftopwUi2q2Iv3O0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jb2xn/YWRvc3BvcmVsZnV0/Ym9sLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxMy8wNy9z/aWx2aW8tcGlvbGEu/anBn" class="card-img-top mayor-goleador img-thumbnail" alt="Mayor Goleador">
+              <div class="card-body">
+                <h5 class="card-title">Maximo Goleador</h5>
+                <p class="card-text">Silvio Piola es considerado uno de los mejores jugadores de la historia del fútbol italiano. Su habilidad para marcar goles y su capacidad para jugar en diferentes posiciones en el campo lo convirtieron en un jugador clave para su equipo. Piola es el máximo goleador de la historia de la Serie A italiana con 274 goles en 327 partidos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://imgs.search.brave.com/qNMjaaCVa9ejccFJ1HdZ_cdVuiW_4KD5uqBoMkQG5us/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vcHJvZHVj/Y2lvbm1lcmN1cmlv/LnMzLmFtYXpvbmF3/cy5jb20vd3AtbWVk/aWEtZm9sZGVyLWRp/YXJpby1lbC1tZXJj/dXJpby93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNC8wNC9pbi0u/anBnP3Jlc2l6ZT02/OTYsMzU2JnNzbD0x" class="card-img-top campeon-inter img-thumbnail" alt="Campeon Inter">
+              <div class="card-body">
+                <h5 class="card-title">Actual Campeon</h5>
+                <p class="card-text">El Inter de Milán ha sido coronado como el campeón de la Serie A 2023-2024, superando al A.C. Milán en la fecha 33 de la competencia. Esta es la vigésima vez que el equipo nerazzurro gana el título de la Serie A, sumando asi otra estrella a su camiseta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://imgs.search.brave.com/NfaJSrVpRPugXvFK-6GMJTpnm2-I9pynOueZ2hgqDv0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9saWJy/YXJ5LnNwb3J0aW5n/bmV3cy5jb20vc3R5/bGVzL2Nyb3Bfc3R5/bGVfMTZfOV9tb2Jp/bGVfMngvczMvMjAy/Mi0wNC9TZXJpZSUy/MEElMjB0cm9waHkl/MjBTY3VkZXR0byUy/MDA0MTUyMi5qcGc_/aXRvaz1MUHEzSWVh/OA" class="card-img-top copa-serie-a img-thumbnail" alt="Copa Serie A">
+              <div class="card-body">
+                <h5 class="card-title">Trofeo de la Serie A</h5>
+                <p class="card-text">El trofeo de la Serie A italiana es el premio que se entrega al campeón de la Serie A, la primera división del fútbol italiano. El trofeo es conocido como la Coppa Campioni d’Italia (Copa de Campeones de Italia) y se entrega al equipo que obtenga más puntos al final de la temporada.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container">
+      <span class="text-white">© 2024 Historia de la Bundesliga</span>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

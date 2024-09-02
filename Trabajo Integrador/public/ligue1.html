@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligue 1 - Historia y Datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .carousel-item img {
+            max-width: 30%;
+            height: auto; 
+            margin: auto; /* Centra la imagen */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Historia del Futbol</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="premier-league.html">Premier League</a></li>
+                    <li class="nav-item"><a class="nav-link" href="laliga.html">LaLiga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ligue1.html">Ligue1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="serie-a.html">Serie A</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eredivisie.html">Eredivisie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="clubCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#clubCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clubCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Historia de la Ligue 1</h2>
+                <p id="historia">Aquí va la información básica sobre la historia, origen, etc.</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <a href="https://www.ligue1.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ligue1.svg/1200px-Ligue1.svg.png" alt="Logo Ligue 1" class="img-fluid liga-logo">
+                </a>
+            </div>
+        </div>
+
+        <div class="accordion mt-4" id="logrosCuriosidades">
+            <h3>Logros y Curiosidades</h3>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Equipos más exitosos
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#logrosCuriosidades">
+                    <div class="accordion-body" id="mejoresEquiposAccordion">
+                        <!-- Información sobre equipos exitosos -->
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Máximos goleadores
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#logrosCuriosidades">
+                    <div class="accordion-body" id="maximosGoleadoresAccordion">
+                        <!-- Información sobre máximos goleadores -->
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Formato
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#logrosCuriosidades">
+                    <div class="accordion-body" id="formatoAccordion">
+                        <!-- Información sobre el formato -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-4">Más Información</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" id="maximoCampeonCard">
+                    <img src="" class="card-img-top" alt="Máximo Campeón">
+                    <div class="card-body">
+                        <h5 class="card-title">Máximo Campeón</h5>
+                        <p class="card-text">Descripción básica sobre el máximo campeón.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" id="maximoGoleadorCard">
+                    <img src="" class="card-img-top" alt="Máximo Goleador">
+                    <div class="card-body">
+                        <h5 class="card-title">Máximo Goleador</h5>
+                        <p class="card-text">Descripción básica sobre el máximo goleador.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" id="actualCampeonCard">
+                    <img src="" class="card-img-top" alt="Actual Campeón">
+                    <div class="card-body">
+                        <h5 class="card-title">Actual Campeón</h5>
+                        <p class="card-text">Descripción básica sobre el actual campeón.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" id="trofeoCard">
+                    <img src="" class="card-img-top" alt="Trofeo">
+                    <div class="card-body">
+                        <h5 class="card-title">Trofeo</h5>
+                        <p class="card-text">Descripción básica sobre el trofeo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+        <p>© 2024 Historia de la Ligue 1</p>
+    </footer>
+
+    <script src="../js/API_ligue1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

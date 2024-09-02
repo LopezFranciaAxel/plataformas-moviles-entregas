@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia de la UEFA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+<style>
+  .navbar .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+  /* Bundesliga */
+.navbar .nav-link.bundesliga-link:hover {
+    background-color: rgba(255, 0, 0, 0.571);
+    color: #ffffff; /* Asegura que el texto siga siendo visible */
+}
+
+  /* Inicio */
+.navbar .nav-link.index-link:hover {
+    background-color: rgba(255, 255, 255, 0.571);
+    color: #ffffff;
+}
+
+ /* Premier League */
+ .navbar .nav-link.premier-link:hover {
+    background-color: #37003c;
+    color: #ffffff;
+}
+
+  /* Seria A */
+  .navbar .nav-link.serie-a-link:hover {
+    background-color: #1d125d;
+    color: #ffffff;
+}
+
+  /* La Liga */
+  .navbar .nav-link.la-liga-link:hover {
+    background-color: rgb(255, 75, 68);
+    color: #ffffff;
+}
+
+  /* UEFA */
+  .navbar .nav-link.uefa-link {
+    background-color: #00d9f7;
+    color: #ffffff;
+}
+
+  /* CONMEBOL */
+  .navbar .nav-link.conmebol-link:hover {
+    background-color: #004D9E;
+    color: #ffffff;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Historia del Fútbol</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link index-link" href="index.html">Inicio</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link premier-link" href="premier-league.html">Premier League</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bundesliga-link" href="bundesliga.html">Bundesliga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link la-liga-link" href="la-liga.html">La Liga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link serie-a-link" href="serie-a.html">Serie A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link uefa-link" href="uefa.html">UEFA</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link conmebol-link" href="ligue1.html">Ligue1</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Historia de la UEFA</h1>
+      <p>La UEFA, fundada en 1954, es el órgano rector del fútbol europeo y organiza competiciones como la UEFA Champions League y la UEFA Europa League.</p>
+      <p>La UEFA ha jugado un papel crucial en el desarrollo y la promoción del fútbol en Europa, estableciendo estándares para el deporte y organizando competiciones que han elevado el perfil del fútbol europeo a nivel mundial.</p>
+      <p>Con sede en Nyon, Suiza, la UEFA se dedica a mejorar el fútbol europeo y proporcionar una plataforma para competiciones justas y emocionantes que unen a aficionados de todo el continente.</p>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Competiciones Principales</h5>
+      </div>
+      <div class="card-body">
+        <div class="accordion" id="accordionUEFA">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                UEFA Champions League
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionUEFA">
+              <div class="accordion-body">
+                La UEFA Champions League es la competición de clubes más prestigiosa de Europa, en la que los mejores equipos de cada liga compiten por el título de campeón de Europa.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                UEFA Europa League
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionUEFA">
+              <div class="accordion-body">
+                La UEFA Europa League es otra competición importante que reúne a equipos de toda Europa para competir en un formato de eliminación directa.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                UEFA Euro
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionUEFA">
+              <div class="accordion-body">
+                El torneo UEFA Euro es la competición de selecciones nacionales más importante de Europa, celebrada cada cuatro años y en la que participan equipos de todo el continente.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-dark text-white">
+  <div class="container">
+    <span class="text-white">© 2024 Historia del Fútbol</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

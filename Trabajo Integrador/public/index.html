@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia del Fútbol</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style> 
+  .navbar .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+  .navbar .nav-link.index-link {
+    background-color: rgba(255, 255, 255, 0.571);
+    color: black; 
+}
+
+  /* Bundesliga */
+.navbar .nav-link.bundesliga-link:hover {
+    background-color: rgba(255, 0, 0, 0.571);
+    color: #ffffff; /* Asegura que el texto siga siendo visible */
+}
+
+  /* Premier League */
+.navbar .nav-link.premier-link:hover {
+    background-color: #37003c;
+    color: #ffffff;
+}
+
+  /* Seria A */
+  .navbar .nav-link.serie-a-link:hover {
+    background-color: #1d125d;
+    color: #ffffff;
+}
+
+  /* La Liga */
+  .navbar .nav-link.la-liga-link:hover {
+    background-color: rgb(255, 75, 68);
+    color: #ffffff;
+}
+
+  /* UEFA */
+  .navbar .nav-link.uefa-link:hover {
+    background-color: #00d9f7;
+    color: #ffffff;
+}
+
+  /* CONMEBOL */
+  .navbar .nav-link.conmebol-link:hover {
+    background-color: #004D9E;
+    color: #ffffff;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Historia del Fútbol</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active index-link" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link premier-link" href="premier-league.html">Premier League</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link serie-a-link" href="serie-a.html">Serie A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bundesliga-link" href="bundesliga.html">Bundesliga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link la-liga-link" href="la-liga.html">La Liga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link uefa-link" href="uefa.html">UEFA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link conmebol-link" href="ligue1.html">Ligue1</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Bienvenido a la Historia del Fútbol</h1>
+      <p>El fútbol, conocido como el deporte rey, tiene una rica y fascinante historia que abarca más de un siglo. Desde sus humildes comienzos en Inglaterra hasta convertirse en un fenómeno global, el fútbol ha sido un vehículo de pasión, talento y conexión entre personas de todo el mundo.</p>
+      <p>En este sitio, exploramos la historia de algunas de las ligas más prestigiosas y las confederaciones que han dado forma al fútbol tal como lo conocemos hoy.</p>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <h2>Ligas y Confederaciones</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://imgs.search.brave.com/DAMGjCrR1wItvVzrO3J5LghSkpfB0oIvvmEV_fr2kCc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3ByZW1p/ZXItbGVhZ3VlOTAz/MS5qcGc" class="card-img-top" alt="Premier League">
+          <div class="card-body">
+            <h5 class="card-title">Premier League</h5>
+            <p class="card-text">Descubre la historia de la liga más competitiva del mundo, hogar de clubes legendarios como el Manchester United y el Liverpool.</p>
+            <a href="premier-league.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://imgs.search.brave.com/xLOcEwDDOKoVMNUCjx3iw2L8UbEEO2FVn9T4HsU5Ib4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3Nlcmll/LWEtZm9vdGJhbGwz/NDkwLmpwZw" class="card-img-top" alt="Serie A">
+          <div class="card-body">
+            <h5 class="card-title">Serie A</h5>
+            <p class="card-text">Explora la historia de la liga italiana, famosa por sus equipos históricos como la Juventus y el AC Milan.</p>
+            <a href="serie-a.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://imgs.search.brave.com/T_pHa1rQeODijEbQqlI3NWxm1yMS4rY5EEOFP0D-UiA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE5LzAx/L0dlcm1hbi1CdW5k/ZXNsaWdhLWxvZ28t/NTAweDMzMy5qcGc" class="card-img-top" alt="Bundesliga">
+          <div class="card-body">
+            <h5 class="card-title">Bundesliga</h5>
+            <p class="card-text">Conoce la historia de la Bundesliga, una de las ligas más exitosas y seguidas de Europa, hogar del Bayern Múnich.</p>
+            <a href="bundesliga.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://imgs.search.brave.com/Yp3RYnohMv3fhy6JbM2AfKArOv6KQ7yor0eCmvSK5Yw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL2xhbGln/YS0yMDIzLTIwMjQt/bmV3MzI1Mi5sb2dv/d2lrLmNvbS53ZWJw" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">La Liga</h5>
+            <p class="card-text">Sumérgete en la historia de la liga española, conocida por sus gigantes del fútbol, el FC Barcelona y el Real Madrid.</p>
+            <a href="la-liga.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../images/Ligue1.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Ligue 1</h5>
+            <p class="card-text">Explora la historia de la liga francesa, donde juegan equipos como el Marsella y el PSG.</p>
+            <a href="ligue1.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../images/Eredivisie.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Eredivisie</h5>
+            <p class="card-text">Conoce la rica historia de la Eredivisie, hogar de grandes del futbol como el PSV y el Ajax.</p>
+            <a href="eredivisie.html" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-dark text-white">
+  <div class="container">
+    <span class="text-white">© 2024 Historia del Fútbol</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
